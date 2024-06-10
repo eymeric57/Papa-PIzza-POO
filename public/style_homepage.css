@@ -1,0 +1,582 @@
+/* import des fonts */
+@font-face {
+  font-family: 'dancing';
+  src: url("./assets/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'khula-regular';
+  src: url("./assets/fonts/Khula/Khula-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'khula-bold';
+  src: url("./assets/fonts/Khula/Khula-Bold.ttf") format('truetype');
+}
+
+/* reset css  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'khula-regular', sans-serif;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'dancing', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: rgba(245, 245, 245, 1);
+}
+
+ul, ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  background-color: rgba(33, 27, 26, 1);
+  color: rgba(245, 245, 245, 1);
+}
+
+/* ici on va coder la vue mobile */
+/* 1er média query < 480px */
+#topbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.line1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.box-phone {
+  margin-right: 25px;
+}
+
+.box-social-icons {
+  margin-left: 25px;
+}
+
+.box-social-icons>a {
+  margin: 0 5px;
+  padding: 2px;
+}
+
+.box-social-icons>a:hover {
+  color: rgba(225, 71, 78, 1);
+}
+
+.line2 {
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(33, 27, 26, 1), rgba(155, 49, 49, 1));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-logo {
+  margin-top: 20px;
+}
+
+.logo-papapizza {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* navbar  */
+.custom-nav, .nav-profil {
+  margin-top: 20px;
+}
+
+.nav-list {
+  width: 100%;
+}
+
+.custom-ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.custom-ul-profil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-link {
+  padding: 0 10px;
+}
+
+.custom-link>a:hover {
+  color: rgba(225, 71, 78, 1);
+}
+
+.end-link {
+  border-left: 1px solid rgba(245, 245, 245, 1);
+}
+
+/* 1ere section  */
+#first-section {
+  background-image: url("./assets/images/homepage/Header_Fond-Mobile.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.box-header {
+  width: 60%;
+  padding: 20px;
+}
+
+.title {
+  font-size: 50px;
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 72px;
+  font-family: 'dancing', sans-serif;
+}
+
+.title-small {
+  font-size: 35px;
+}
+
+.header-description {
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+.call-action {
+  padding: 10px;
+  background-color: rgba(255, 71, 78, 1);
+  color: rgba(245, 245, 245, 1);
+  font-weight: 700;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.call-action:hover {
+  background-color: rgba(155, 49, 49, 1);
+  color: rgba(245, 245, 245, 1);
+  font-weight: 700;
+}
+
+/* second section  */
+#second-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.sub-title {
+  color: rgba(155, 49, 49, 1);
+  font-size: 30px;
+}
+
+.name-pizza {
+  color: rgba(155, 49, 49, 1);
+  font-size: 20px;
+}
+
+.home-pizza {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.card-pizza {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.strong {
+  font-family: 'khula-bold', sans-serif;
+}
+
+/* TRUC CHELOU */
+.truc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trait {
+  width: 30px;
+  height: 1px;
+  background-color: rgba(155, 49, 49, 1);
+  margin: 0 10px;
+}
+
+.losange {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(155, 49, 49, 1);
+  transform: rotate(45deg);
+
+}
+
+.trait-black {
+  width: 30px;
+  height: 1px;
+  background-color: rgba(24, 24, 24, 1);
+  margin: 0 10px;
+}
+
+.losange-black {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(24, 24, 24, 1);
+  transform: rotate(45deg);
+
+}
+
+/* 3eme section */
+#third-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-info1, .box-info2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.box-info2 {
+  flex-direction: column-reverse;
+}
+
+.box-red {
+  background-color: rgba(155, 49, 49, 1);
+}
+
+.card-red {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sub-title-black {
+  color: rgba(24, 24, 24, 1);
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.image-info {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.qualite {
+  text-align: justify;
+  padding: 10px 20px;
+}
+
+.info {
+  text-align: center;
+}
+
+/* 4eme section */
+#fourth-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #292221;
+}
+
+.image-box-pizza {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.box-fourth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.footer-description {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+/* FOOTER  */
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-footer-logo {
+  display: flex;
+  height: 150px;
+  width: 300px;
+  background-color: rgba(155, 49, 49, 1);
+  border-radius: 50%;
+  justify-content: center;
+  transform: translateY(75px)
+}
+
+.footer-logo {
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+}
+
+.nav-footer {
+  padding-top: 95px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(155, 49, 49, 1);
+  padding-bottom: 20px;
+}
+
+.nav-ul-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-icon-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link-footer>a:hover {
+  color: rgba(225, 71, 78, 1);
+
+}
+
+.social-icon {
+  margin: 0 10px;
+}
+
+.social-icon:hover{
+  color: rgba(225, 71, 78, 1);
+} 
+
+.text-footer {
+  margin-bottom: 5px;
+}
+
+.box-footer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(225, 71, 78, 1);
+}
+
+/* ici on va coder la vue tablette */
+/* 2ème média query > 480px et < 768px */
+@media screen and (min-width: 480px) {}
+
+
+/* ici on va coder la vue pc portable */
+/* 3ème média query > 768px et < 900px */
+@media screen and (min-width: 768px) {
+  .line2 {
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+
+  .custom-ul {
+    justify-content: center;
+  }
+
+  .custom-link {
+    padding: 0 10px;
+  }
+
+  .nav-logo, .nav-list, .nav-profil {
+    width: 100%;
+  }
+
+  .nav-logo {
+    margin-top: 0px;
+    margin-left: 30px;
+  }
+
+  /* 1ere section  */
+  #first-section {
+    background-image: url("./assets/images/homepage/Cinemagraph-Pizza.gif");
+    height: 750px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .box-header {
+    padding-top: 110px;
+    padding-left: 5%;
+    width: 45%;
+  }
+
+  .title {
+    font-size: 65px;
+    line-height: 80px;
+  }
+
+  .title-small {
+    font-size: 50px;
+  }
+
+  .header-description {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  /* 2eme section */
+  .bloc-pizza {
+    display: flex;
+  }
+
+  /* 4eme section */
+  #fourth-section {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0;
+  }
+
+  .image-box-pizza {
+    width: 30%;
+    height: 30%;
+    object-fit: contain;
+  }
+
+  /* FOOTER  */
+  .nav-ul-footer{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .nav-link-footer{
+    border-right: 1px solid rgba(245, 245, 245, 1);
+    padding: 0 20px;
+  }
+
+  .box-icon-footer{
+    padding-left: 20px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .box-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  /* 1er enfant de .box-footer */
+  .box-footer>p:first-child{
+    padding-right: 20px;
+    border-right: 1px solid rgba(245, 245, 245, 1);
+  }
+
+  /* dernier enfant de .box-footer */
+  .box-footer>p:last-child{
+    padding-left: 20px;
+  }
+
+
+}
+
+
+/* ici on va coder la vue pc */
+/* 4ème média query > 900px */
+@media screen and (min-width: 900px) {
+
+  /* 3eme section */
+  .box-info1, .box-info2 {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .box-info2 {
+    justify-content: flex-end;
+  }
+
+  .image-info {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .qualite {
+    font-size: 14px;
+    padding: 0 15px;
+    line-height: 24px;
+    margin: 5px 0;
+    width: 80%;
+  }
+
+  .card-black {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 70px;
+  }
+
+
+}
+
+
+/* ici on va coder la vue pc large */
+/* 5ème média query > 1280px */
+@media screen and (min-width: 1280px) {
+
+  /* 1ere section  */
+  .box-header {
+    padding-top: 160px;
+    padding-left: 12%;
+    width: 50%;
+  }
+
+  .title {
+    font-size: 85px;
+  }
+
+  .title-small {
+    font-size: 60px;
+  }
+
+  /* 2eme section */
+  .box-pizza {
+    display: flex;
+  }
+}
